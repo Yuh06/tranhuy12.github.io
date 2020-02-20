@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+    <h2 style="color: chartreuse;">Phiêú đăng ký tham gia chương trình khuyến mãi</h2>
+    <form action="">
+        <table style="background-color: chartreuse;" border="1" cellspacing="0" >
+            <tr>
+             <td>Họ và tên</td>
+             <td><input type="text" value="Tran Van Huy"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" value="Hanoi"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" value="10 số"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td><input type="radio" id="nam" name="gioi tinh">Nam <input type="radio" id="nu" name="gioi tinh">Nữ</td><br>
+               
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+<select>
+<option value="giaovien">giáo viên</option>
+<option value="bacsy">bác sỹ</option>
+<option value="kysu">kỹ sư</option>
+<option value="khac">khác</option>
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select>
+                        <option value="kemdanhrang">kem đánh răng</option>
+                        <option value="botgiat">bột giặt</option>
+                        <option value="daugoidau">dầu gội đầu</option>
+                        <option value="suatam">sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td><input type="number" id="dudoan"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+
+                
+                <button type="button" onclick="document.getElementById('demo').innerHTML='Truy cập thành công'">Đồng Ý</button>
+                <p style="color: blue;" id="demo"></p>
+            </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
